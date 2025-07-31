@@ -44,3 +44,5 @@ _ReSharper*/
 # NuGet
 *.nupkg
 project.lock.json
+/GlobalSuppressions.cs
+/.editorconfig
