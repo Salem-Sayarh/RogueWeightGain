@@ -20,12 +20,7 @@ namespace RWG.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            //var dbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "meals.db");
-            //options.UseSqlite($"Data Source={dbPath}");
-
-            var exeDir = AppDomain.CurrentDomain.BaseDirectory;
-            var dbPath = Path.Combine(exeDir, "meals.db");
-            Debug.WriteLine($"SQLite DB path: {dbPath}");
+            var dbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "meals.db");
             options.UseSqlite($"Data Source={dbPath}");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
