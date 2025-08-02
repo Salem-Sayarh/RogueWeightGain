@@ -23,6 +23,8 @@ namespace RWG
         {
             InitializeComponent();
         }
+
+        // TODO: Create Form to add new meal 
         private void NavigateToMeals(object sender, RoutedEventArgs e)
         {
             var window = new MealsWindow();

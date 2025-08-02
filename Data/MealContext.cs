@@ -14,7 +14,7 @@ namespace RWG.Data
     /// <summary>
     /// Represents the database context for managing meal-related data in the application.
     /// </summary>
-    public class MealContext : DbContext
+    public class MealsContext : DbContext
     {
         public DbSet<Meal> Meals { get; set; }
 
@@ -36,7 +36,7 @@ namespace RWG.Data
 
             // Index on Title for quick lookup
             modelBuilder.Entity<Meal>()
-                .HasIndex(m => m.Title);
+                .HasIndex(m => m.ID);
         }
     }
 }

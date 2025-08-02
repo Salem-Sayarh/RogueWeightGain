@@ -10,8 +10,8 @@ using RWG.Data;
 namespace RWG.Migrations
 {
     [DbContext(typeof(MealsContext))]
-    [Migration("20250731225007_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250802164805_UpdateID")]
+    partial class UpdateID
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21,7 +21,7 @@ namespace RWG.Migrations
 
             modelBuilder.Entity("RWG.Models.Meal", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -64,9 +64,9 @@ namespace RWG.Migrations
                     b.Property<int>("TypeTag")
                         .HasColumnType("INTEGER");
 
-                    b.HasKey("Id");
+                    b.HasKey("ID");
 
-                    b.HasIndex("Title");
+                    b.HasIndex("ID");
 
                     b.ToTable("Meals");
                 });

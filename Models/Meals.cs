@@ -40,7 +40,7 @@ namespace RWG.Models
 
 
         [Key]
-        public int Id { get; set; }
+        public int ID { get; set; }
         [Required]
         public string? Title { get; set; }
 
