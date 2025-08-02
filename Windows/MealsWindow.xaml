@@ -6,8 +6,22 @@
         xmlns:local="clr-namespace:RWG.Windows"
         mc:Ignorable="d"
         Title="Meals" Height="450" Width="800">
-    <Grid>
-        <!--Title-->
-        <TextBlock Text="Meals Page" FontSize="70" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Grid Margin="20">
+        <!--Action buttons-->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10">
+            <StackPanel.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Height" Value="30"/>
+                    <Setter Property="Width" Value="100"/>
+                    <Setter Property="Margin" Value="0,0,10,0"/>
+                </Style>
+            </StackPanel.Resources>
+            <Button x:Name="BtnCreateMeal" Content="+ New Meal"/>
+            <Button x:Name="BtnEditMeal" Content="✎ Edit Meal" />
+        </StackPanel>
+        <!--Meals List-->
+        <ListView x:Name="LvMeals" Margin="0,60,0,0">
+            
+        </ListView>
     </Grid>
 </Window>

@@ -47,17 +47,5 @@ namespace RWG
             };
             window.Show();
         }
-
-        private void NavigateToCreateMeals(object sender, RoutedEventArgs e)
-        {
-            var window = new CreateMealWindow();
-            window.Owner = this;
-            this.Hide();
-            window.Closed += (s, args) =>
-            {
-                this.Show();
-            };
-            window.Show();
-        }
     }
 }
