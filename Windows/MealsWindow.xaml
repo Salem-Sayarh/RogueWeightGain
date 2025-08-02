@@ -16,7 +16,7 @@
                     <Setter Property="Margin" Value="0,0,10,0"/>
                 </Style>
             </StackPanel.Resources>
-            <Button x:Name="BtnCreateMeal" Content="+ New Meal"/>
+            <Button x:Name="BtnCreateMeal" Content="+ New Meal" Click="BtnCreateMeal_Click"/>
             <Button x:Name="BtnEditMeal" Content="✎ Edit Meal" />
         </StackPanel>
         <!--Meals List-->

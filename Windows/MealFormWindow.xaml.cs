@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace RWG.Windows
 {
     /// <summary>
-    /// Interaction logic for MealsPage.xaml
+    /// Interaction logic for MealFormWindow.xaml
     /// </summary>
-    public partial class MealsWindow : Window
+    public partial class MealFormWindow : Window
     {
-        public MealsWindow()
+        public MealFormWindow()
         {
             InitializeComponent();
-        }
-
-        private void BtnCreateMeal_Click(object sender, RoutedEventArgs e)
-        {
-            var window = new MealFormWindow();
-            window.Show();
-            this.Close();
         }
     }
 }
