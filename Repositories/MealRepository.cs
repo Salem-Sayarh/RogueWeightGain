@@ -27,16 +27,19 @@ namespace RWG.Repositories
         public void AddMeal(Meal meal)
         {
             _ctx.Meals.Add(meal);
+            _ctx.SaveChanges();
         }
         // UPDATE Meal
         public void UpdateMeal(Meal meal)
         {
             _ctx.Meals.Update(meal);
+            _ctx.SaveChanges();
         }
         // DELETE Meal
         public void DeleteMeal(Meal meal) 
         { 
             _ctx.Meals.Remove(meal); 
+            _ctx.SaveChanges();
         }
         // FIND Meal by ID
         public Meal? GetMealByID(int id)
@@ -46,7 +49,7 @@ namespace RWG.Repositories
         // FIND Meal by Title
         public Meal? GetMealByTitle(string title)
         {
-            return _ctx.Meals.Find(title);
+            return _ctx.Meals.FirstOrDefault(m => m.Title == title);
         }
     }
 }

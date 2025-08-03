@@ -36,7 +36,7 @@ namespace RWG.Data
 
             // Index on Title for quick lookup
             modelBuilder.Entity<Meal>()
-                .HasIndex(m => m.ID);
+                .HasIndex(m => m.Title);
         }
     }
 }

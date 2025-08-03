@@ -61,10 +61,7 @@ namespace RWG.Models
 
         public int RepeatIntervalDays { get; set; } // Repeat interval constraint: minimum days before repeating
 
-        public string Notes { get; set; }  // Free-form notes (ingredients, portions, recipe steps)
-
-        // Path to image file in local folder
-        public string ImagePath { get; set; }
+        public string? Notes { get; set; }  // Free-form notes (ingredients, portions, recipe steps)
 
     }
 }

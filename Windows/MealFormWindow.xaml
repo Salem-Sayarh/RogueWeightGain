@@ -87,14 +87,8 @@
 
                 <!-- Notes -->
                 <TextBlock Text="Notes / Recipe Steps:" FontWeight="SemiBold" Margin="0,15,0,5"/>
-                <TextBox Name="TxtNotes" Height="100" TextWrapping="Wrap"
+                <TextBox Name="TxtNotes" Height="150" TextWrapping="Wrap"
                          AcceptsReturn="True" VerticalScrollBarVisibility="Auto"/>
-
-                <!-- Image Path -->
-                <StackPanel Orientation="Horizontal" Margin="0,5">
-                    <TextBlock Text="Image Path:" Width="120" VerticalAlignment="Center"/>
-                    <TextBox Name="TxtImagePath"/>
-                </StackPanel>
             </StackPanel>
         </ScrollViewer>
 
@@ -103,9 +97,9 @@
                     Orientation="Horizontal" HorizontalAlignment="Right"
                      Margin="0,20,0,0">
             <Button Name="BtnPrimaryAction" Content="Create / Save"
-                    Width="120" Height="35"/>
+                    Width="120" Height="35" Click="BtnPrimaryAction_Click"/>
             <Button Name="BtnCancel" Content="Cancel"
-                    Width="80" Height="35"/>
+                    Width="80" Height="35" Click="BtnCancel_Click"/>
         </StackPanel>
     </Grid>
 </Window>
